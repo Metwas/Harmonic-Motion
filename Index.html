@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Harmonic Motion</title>
+    <link rel="stylesheet" href="Source/Styles/HarmonicStyles.css" />
+</head>
+
+<body>
+    <!-- Canvas -->
+    <div class="canvas-wrapper">
+        <canvas data-name="harmonicCanvas" id="canvas"></canvas>
+    </div>
+
+    <!-- Controls for the animation -->
+    <div class="control-panel">
+        <table>
+            <tr>
+                <td>
+                    <label class="foreground-light">Offset</label>
+                </td>
+                <td>
+                    <div class="range-control">
+                        <input id="input-offset" type="range" oninput="rangeHandler(this)" onchange="rangeHandler(this)"
+                            min="0" max="15" value="2.5" step="0.1" />
+                        <p data-width="35" class="output float-left foreground-light">50</p>
+                    </div>
+                </td>
+                <td>
+                    <label class="foreground-light">Velocity</label>
+                </td>
+                <td>
+                    <div class="range-control">
+                        <input id="input-velocity" oninput="rangeHandler(this)" onchange="rangeHandler(this)" type="range"
+                            min="0" max="100" step="0.5" value="10" />
+                        <p data-width="35" class="output float-left foreground-light">50</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="foreground-light">Amplitude</label>
+                </td>
+                <td>
+                    <div class="range-control">
+                        <input id="input-amplitude" oninput="rangeHandler(this)" onchange="rangeHandler(this)" type="range"
+                            min="0" max="100" step="0.5" value="20" />
+                        <p data-width="35" class="output float-left foreground-light">50</p>
+                    </div>
+                </td>
+                <td>
+                    <label class="foreground-light">Width</label>
+                </td>
+                <td>
+                    <div class="range-control">
+                        <input id="input-width" type="range" oninput="rangeHandler(this)" onchange="rangeHandler(this)"
+                            min="2" max="40" value="18" step="1" />
+                        <p data-width="35" class="output float-left foreground-light">50</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p class="content-wrapper">Code by Metwas</p>
+    </div>
+
+    <!-- <script type="text/javascript"  src="Scripts/particle.js"></script> -->
+    <script type="text/javascript" src="Scripts/Harmonic.js"></script>
+</body>
+
+</html>
