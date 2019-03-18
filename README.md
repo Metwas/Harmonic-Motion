@@ -1,2 +1,2 @@
 # Harmonic-Motion
-Oscillating animation
+
